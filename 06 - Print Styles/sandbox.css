@@ -1,0 +1,38 @@
+@media print {
+/* Higing unncecessary styling elements for print*/
+
+  .course-files,
+  #logo,
+  .final-result::before,
+  .final-result::after,
+  .info::before,
+  .info::after {
+    display: none;
+  }
+
+  /* Global typography reset*/
+  body {
+    font-family: Georgia, serif; /*serifs are better on paper*/
+    font-size: 16pt; /*print based measurement*/
+    line-height: 24pt;
+    background: none;
+    color: #000;
+  }
+
+  /* layout reset */
+  .final-result,
+  .info,
+  section,
+  footer {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #000;
+  }
+
+  section:first-child::before {
+    border: none;
+  }
+
+}
